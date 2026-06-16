@@ -16,10 +16,6 @@ jobs:
     steps:
       - name: Say goodbye
         run: echo "Goodbye!"
-      - name: Fail step
-        run: |
-          echo "I will fail"
-          exit 1
       - name: Multi line bash
         run: |
           echo "I am"
