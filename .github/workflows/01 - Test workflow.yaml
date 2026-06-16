@@ -20,7 +20,6 @@ jobs:
         run: |
           echo "I will fail"
           exit 1
-  echo-multi-bash:
       - name: Multi line bash
         run: |
           echo "I am"
