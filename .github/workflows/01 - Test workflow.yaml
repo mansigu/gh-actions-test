@@ -1,0 +1,28 @@
+# See 01 - Test workflow/README.md for more information
+# about the building blocks of GitHub Actions
+
+name: 01 - Test workflow
+
+on: push
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello, world!"
+  echo-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say goodbye
+        run: echo "Goodbye!"
+      - name: Fail step
+        run: |
+          echo "I will fail"
+          exit 1
+  echo-multi-bash:
+      - name: Multi line bash
+        run: |
+          echo "I am"
+          echo "a multi-line"
+          echo "script."
