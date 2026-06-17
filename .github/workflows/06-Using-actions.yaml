@@ -19,5 +19,6 @@ jobs:
           node-version: '24.x'
       - name: Install Dependencies
         run: npm ci
+        working_directory: 06-using-actions
       - name: Run Unit Tests
         run: npm run test
