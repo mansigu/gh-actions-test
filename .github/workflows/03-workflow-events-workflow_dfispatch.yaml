@@ -1,11 +1,9 @@
 # See 02-workflow-events/README.md for more information
 # about different triggers for GitHub Actions.
 
-name: 02 - Workflow Events
+name: 03-workflow-events-workflow_dfispatch
 
-on:
-  pull_request:
-
+on: workflow_dispatch
 jobs:
   echo:
     runs-on: ubuntu-latest
