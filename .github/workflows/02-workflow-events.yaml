@@ -5,7 +5,7 @@ name: 02 - Workflow Events
 
 on:
   pull_request:
-
+    types: [opened]
 jobs:
   echo:
     runs-on: ubuntu-latest
