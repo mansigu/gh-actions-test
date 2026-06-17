@@ -1,16 +1,11 @@
 # See 02-workflow-events/README.md for more information
 # about different triggers for GitHub Actions.
 
-name: 03 workflow events - workflow_dispatch
+name: 02-01 Workflow Events PR
 
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Mansi Gupta'
-        required: true
-        default: 'GitHub Actions'
-
+  pull_request:
+    types: [opened, reopened, synchronize]
 jobs:
   echo:
     runs-on: ubuntu-latest

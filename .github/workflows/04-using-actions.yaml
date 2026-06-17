@@ -1,7 +1,7 @@
 # See 04-using-actions/README.md for more information
 # about using actions within workflows.
 
-name: 06 - Using Actions
+name: 04 - Using Actions
 
 on: push
 jobs:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 06-using-actions/react-app
+        working-directory: 04-using-actions/react-app
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4

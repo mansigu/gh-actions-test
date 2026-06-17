@@ -1,11 +1,12 @@
 # See 02-workflow-events/README.md for more information
 # about different triggers for GitHub Actions.
 
-name: 02 - Workflow Events PR
+name: 02-03 workflow events - schedule
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+  schedule:
+    - cron: '0 0 * * *' # Runs at 00:00 UTC every day
+
 jobs:
   echo:
     runs-on: ubuntu-latest

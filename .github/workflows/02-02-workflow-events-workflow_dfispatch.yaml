@@ -1,11 +1,15 @@
 # See 02-workflow-events/README.md for more information
 # about different triggers for GitHub Actions.
 
-name: 04 workflow events - schedule
+name: 02-02 workflow events - workflow_dispatch
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Runs at 00:00 UTC every day
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Mansi Gupta'
+        required: true
+        default: 'GitHub Actions'
 
 jobs:
   echo:
