@@ -3,7 +3,9 @@
 
 name: 01 - Test workflow
 
-on: push
+on: 
+  push:
+    branches: [ main ]
 
 jobs:
   echo-hello:
