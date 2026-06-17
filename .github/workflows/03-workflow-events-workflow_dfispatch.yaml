@@ -1,7 +1,7 @@
 # See 02-workflow-events/README.md for more information
 # about different triggers for GitHub Actions.
 
-name: 02 - Workflow Events
+name: 02 - 03-workflow-events-workflow_dfispatch
 
 on:
   workflow_dispatch:
