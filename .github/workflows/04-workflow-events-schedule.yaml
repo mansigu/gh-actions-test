@@ -1,0 +1,15 @@
+# See 02-workflow-events/README.md for more information
+# about different triggers for GitHub Actions.
+
+name: 04 workflow events - schedule
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs at 00:00 UTC every day
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show the trigger
+        run: echo "I've been triggered by a(n) ${{ github.event_name }} event."
