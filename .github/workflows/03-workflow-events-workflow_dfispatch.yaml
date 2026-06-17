@@ -3,14 +3,7 @@
 
 name: 03-workflow-events-workflow_dfispatch
 
-on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Mansi Gupta'
-        required: true
-        default: 'GitHub Actions'
-
+on: workflow_dispatch
 jobs:
   echo:
     runs-on: ubuntu-latest
