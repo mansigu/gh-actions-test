@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "$GITHUB_OUTPUT"
           echo "status=${{ inputs.build-status }}" >> "$GITHUB_OUTPUT"
-          echo "name=mansi" >> "$GITHUB_OUTPUT"
+          echo "name=mansi" > "$GITHUB_OUTPUT"
           echo "name=mansi" >> "$GITHUB_OUTPUT"
           echo "email=mansi@gmil.com" >> "$GITHUB_OUTPUT"
           cat "$GITHUB_OUTPUT"
