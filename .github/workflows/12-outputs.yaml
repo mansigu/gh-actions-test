@@ -15,7 +15,7 @@ on:
         default: success
 
 jobs:
-  build:
+  build1:
     runs-on: ubuntu-latest
     outputs:
       build-status: ${{ steps.build.outputs.status }}
